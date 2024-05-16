@@ -1,0 +1,13 @@
+<div class="card mb-3">
+  <div class="d-flex justify-content-center align-items-center">
+    <img
+      [src]="image"
+      class="card-img-top"
+      alt="Image"
+      style="max-width: 100%; height: auto"
+    />
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{ text | summary : 35 }}</p>
+  </div>
+</div>
