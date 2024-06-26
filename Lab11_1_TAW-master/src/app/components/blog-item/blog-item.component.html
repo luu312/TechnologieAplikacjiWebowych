@@ -1,0 +1,10 @@
+
+<div class="card" [class]="getColorClass(color ?? 'primary')" style="max-width: 85rem;">
+  <div class="card-header">{{ title }}</div> 
+  <div class="card-body">
+    <blog-item-image [image]="image"></blog-item-image>
+    <div class="card-text">
+      <blog-item-text [text]="text" [id]="id"></blog-item-text>
+    </div>
+  </div>
+</div> 

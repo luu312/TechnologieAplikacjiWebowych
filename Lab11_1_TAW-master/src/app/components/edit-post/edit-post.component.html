@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <h2>Edit post</h2>
+    <form (ngSubmit)="updatePost()" #postForm="ngForm">
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="post.title" name="title" required>
+      </div>
+      <div class="mb-3">
+        <label for="image" class="form-label">Image URL</label>
+        <input type="text" class="form-control" id="image" [(ngModel)]="post.image" name="image" required>
+      </div>
+      <div class="mb-3">
+        <label for="text" class="form-label">Text</label>
+        <textarea class="form-control" id="text" rows="3" [(ngModel)]="post.text" name="text" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="color" class="form-label">Color</label>
+        <select class="form-control" id="color" [(ngModel)]="post.color" name="color" required>
+          <option value="primary">Blue</option>
+          <option value="success">Green</option>
+          <option value="danger">Red</option>
+          <option value="warning">Yellow</option>
+          <option value="info">Light-blue</option>
+          <option value="light">White</option>
+          <option value="dark">Black</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Save changes</button>
+    </form>
+  </div>
+  
